@@ -84,3 +84,7 @@ Now that you have an access token, you can call any method in the v2 API by just
 As an example, here's how to use curl to get information about the user:
 
     curl https://api.shoeboxed.com/v2/user -X GET -H 'Authorization: Bearer <user access token>'
+    
+The user account ID becomes available with the user information. You may use the account ID to carry out further queries such as 
+
+    corl https://api.shoeboxed.com/v2/{account}/settings -X GET -H 'Authorization: Bearer <user access token>'
